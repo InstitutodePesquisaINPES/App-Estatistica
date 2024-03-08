@@ -11,6 +11,10 @@ body {
     height: 100vh;
 }
 
+nav {
+    background: linear-gradient(160deg,#9eb0db, #438fce, #7259b8);
+}
+
 .navbar {
     position: fixed;
     margin: 0 5%;

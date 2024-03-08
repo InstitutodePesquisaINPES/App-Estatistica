@@ -20,3 +20,5 @@ document.addEventListener('DOMContentLoaded', function() {
         userIcon.addEventListener('click', setupLogin);
     }
 });
+
+console.log("indo")

@@ -6,11 +6,11 @@ app.secret_key = "relampagomarquinhos"
 
 @app.route("/")
 def home():
-    return render_template("Lista.html", titulo="Lista de Chamadas")
+    return render_template("index.html")
 
 @app.route("/form")
-def new():
-    return render_template("form.html", titulo="Nova Chamada")
+def form():
+    return render_template("form.html")
 
 @app.route("/formestatistica")
 def formestatistica():
