@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: #e2e2e2;
+}
+
+.backgroundMain {
+    background: linear-gradient(160deg,#9eb0db, #438fce, #1d3b88);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 220px;
+    z-index: -1;
+    filter: drop-shadow( 0px 5px 5px #00000050);
+}
+
+main {
+    color: #f1f1f1;
+}
+
+nav {
+    background: transparent;
+}
+
+.navbar {
+    position: fixed;
+    margin: 0 5%;
+    background: transparent;
+}
+
+.navbar a h3 {
+    font-size: 1.2rem;
+    color: #f1f1f1;
+}
+
+
+/* Login user */
+
+.user-box {
+    display: none;
+    position: absolute;
+    top: 65px;
+    right: 40px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 25px 20px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    z-index: 100000;
+    font-weight: 400;
+}
+
+.box-content {
+    text-align: center;
+}
+
+.box-content span:hover,
+.box-content a:hover {
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: 0.3s ease-in;
+}
+
+.user-box a {
+    display: block;
+    margin-bottom: 10px;
+    color: #121212;
+    text-decoration: none;
+}
+
+#closeBox {
+    cursor: pointer;
+    color: #2b2b2b;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transform: translateY(-20px);
+}
+
+#userIcon {
+    cursor: pointer;
+}
+
+.titleBox h3 {
+    font-size: 1.5rem;
+    color: #f1f1f1;
+    margin: 20px 0px 0px 0px;
+}
+
+.titleBox h1 {
+    text-transform: uppercase;
+    color: #f1f1f1;
+    margin: 20px 0px 50px 0px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+/* Login user end */
+
+
+/*-------------------------------------------- */
+
+
+/* FLEX BOX */
+
+section {
+    padding: 20px;
+}
+
+.box {
+    text-align: center;
+}
+
+.containerPrimary {
+    padding: 10px;
+    margin: 70px 55px 0px 55px;
+}
+
+.containerPrimary h2 {
+    color: #363636;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 20px #00000020;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 40px 0px;
+}
+
+.container div {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 30px !important;
+    border-radius: 10px;
+    margin: 20px 0px;
+    gap: 20px;
+}
+
+.container h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #363636;
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+
+.fielEstatistica {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 20px 0px;
+}
+
+.fielResultEstatistica {
+    flex: 1 1 25%;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    background: linear-gradient(160deg,#9eb0db, #438fce, #7259b8);
+    line-height: 10px;
+    align-items: center;
+    filter: drop-shadow(0px 0px 10px #00000050);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centraliza horizontalmente */
+    justify-content: center; /* centraliza verticalmente */
+    text-align: center; /* centraliza o texto */
+}
+
+.fielResultEstatisticaValue {
+    flex: 1 1 20%;
+}
+.colorResultEstatisticaOne {
+    background-color: #4771db;
+}
+
+
+.fielResultEstatistica p { 
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.fielResultEstatistica i { 
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.buttonSubmit {
+    padding: 25px 250px;
+    background-color: #ffa600;
+    background: linear-gradient(160deg, #ffde84, #ffbb00, #ee9b02);
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 0px 0px 50px 0px;
+}
+
+.buttonSubmit span {
+    color: #523500;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+
+@media screen and (max-width: 600px) {
+    .fielResultEstatistica {
+        flex: 1 1 33.33%;
+        /* Quando a largura da tela for menor que 600px, 3 componentes ocupam 33.33% cada */
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .fielResultEstatistica {
+        flex: 1 1 50%;
+        /* Quando a largura da tela for menor que 400px, 2 componentes ocupam 50% cada */
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .fielResultEstatistica {
+        flex: 1 1 100%;
+        /* Quando a largura da tela for menor que 300px, 1 componente ocupa 100% da largura */
+    }
+}
+
+
+/* FLEX BOX END */
+
+
+/* GRÁFICO */
+
+canvas {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    height: 400px !important;
+    margin: auto;
+}
+
+
+/* GRÁFICO END */
+
+/* Animate Icons */ 

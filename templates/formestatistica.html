@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/formestatistica.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>(EM PROGRESSO) Formulário</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Responda às perguntas</h2>
+      </div>
+
+      <form id="form" class="form">
+        <!-- Dados da Cidade -->
+        <div class="form-control">
+          <label for="nome_cidade">Qual é o nome da cidade em que a pesquisa será realizada?</label>
+          <input
+            type="text"
+            id="nome_cidade"
+            placeholder="Digite o nome da cidade..."
+          />
+        </div>
+
+        <div class="form-control">
+          <label for="populacao">Qual é a população total da cidade?</label>
+          <input
+            type="number"
+            id="populacao"
+            placeholder="Digite o número total..."
+          />
+        </div>
+
+        <!-- Classificação por Porte -->
+        <div class="form-control">
+          <label for="porte_cidade">Com base na população, qual seria o porte da cidade de acordo com a classificação definida no código?</label>
+          <input
+            type="text"
+            id="porte_cidade"
+            placeholder="Digite o porte da cidade..."
+          />
+        </div>
+
+        <div class="form-control">
+          <label for="porte_inferior">Se a população for inferior a 3 mil, qual seria o porte?</label>
+          <input
+            type="text"
+            id="porte_inferior"
+            placeholder="Digite o porte..."
+          />
+        </div>
+
+        <div class="form-control">
+          <label for="porte_superior">E se a população for superior a 500 mil, qual seria o porte?</label>
+          <input
+            type="text"
+            id="porte_superior"
+            placeholder="Digite o porte..."
+          />
+        </div>
+
+        <!-- Características da Cidade -->
+        <div class="form-control">
+          <label for="distancia">Qual é a distância em quilômetros entre as áreas pesquisadas?</label>
+          <input
+            type="number"
+            id="distancia"
+            placeholder="Digite a distância..."
+          />
+        </div>
+
+        <div class="form-control">
+          <label for="qnt_bairros">Quantos bairros urbanos estão incluídos na pesquisa?</label>
+          <input
+            type="number"
+            id="qnt_bairros"
+            placeholder="Digite o número de bairros..."
+          />
+        </div>
+
+        <div class="form-control">
+          <label for="qnt_rurais">E quantas áreas rurais estão sendo consideradas?</label>
+          <input
+            type="number"
+            id="qnt_rurais"
+            placeholder="Digite o número de áreas rurais..."
+          />
+        </div>
+
+        <!-- Informações da Pesquisa -->
+        <div class="form-control">
+          <label for="eleitorado">Qual é o eleitorado total da cidade?</label>
+          <input
+            type="number"
+            id="eleitorado"
+            placeholder="Digite o eleitorado total..."
+          />
+        </div>
+
+        <div class="form-control">
+          <label for="nvl_confianca">Qual o nível de confiança percentual escolhido para a pesquisa?</label>
+          <input
+            type="number"
+            id="nvl_confianca"
+            placeholder="Digite o nível de confiança..."
+          />
+        </div>
+
+        <div class="form-control">
+          <label for="margem_erro">Qual é a margem de erro desejada para a pesquisa?</label>
+          <input
+            type="number"
+            id="margem_erro"
+            placeholder="Digite a margem de erro..."
+          />
+        </div>
+
+        <!-- Tipo de Pesquisa e Perguntas -->
+        <div class="form-control">
+          <label for="tipo_pesquisa">Qual é o tipo de pesquisa (definido como 'tipo_pesquisa')?</label>
+          <input
+            type="text"
+            id="tipo_pesquisa"
+            placeholder="Digite o tipo de pesquisa..."
+          />
+        </div>
+
+        <div class="form-control">
+          <label for="qnt_perguntas">Quantas perguntas estão planejadas para a pesquisa?</label>
+          <input
+            type="number"
+            id="qnt_perguntas"
+            placeholder="Digite o número de perguntas..."
+          />
+        </div>
+
+        <!-- Cálculos e Resultados Esperados -->
+        <div class="form-control">
+          <label for="ambpg">Qual é o valor estimado para o Amostral Mínimo Base População Generalista (AMBPG)?</label>
+          <input
+            type="number"
+            id="ambpg"
+            placeholder="Digite o valor estimado..."
+          />
+        </div>
+
+        <div class="form-control">
+          <label for="ambeg">E para o Amostral Mínimo Base Eleitoral Generalista (AMBEG)?</label>
+          <input
+            type="number"
+            id="ambeg"
+            placeholder="Digite o valor estimado..."
+          />
+        </div>
+
+        <div class="form-control">
+          <label for="ambps">Quanto é a Amostra Mínima Base População Setorial (AMBPS)?</label>
+          <input
+            type="number"
+            id="ambps"
+            placeholder="Digite o valor estimado..."
+          />
+        </div>
+
+        <div class="form-control">
+          <label for="ambes">E Eleitoral Setorial (AMBES)?</label>
+          <input
+            type="number"
+            id="ambes"
+            placeholder="Digite o valor estimado..."
+          />
+        </div>
+
+        <div class="form-control">
+          <label for="vp_bps">Qual é o valor esperado para a pesquisa na Base População Setorial (VP_BPS)?</label>
+          <input
+            type="number"
+            id="vp_bps"
+            placeholder="Digite o valor esperado..."
+          />
+        </div>
+
+        <div class="form-control">
+          <label for="vp_bes">E na Base Eleitoral Setorial (VP_BES)?</label>
+          <input
+            type="number"
+            id="vp_bes"
+            placeholder="Digite o valor esperado..."
+          />
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/f9e19193d6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
